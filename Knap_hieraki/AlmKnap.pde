@@ -1,0 +1,5 @@
+class AlmKnap extends Komponent{
+  
+  
+  
+}
