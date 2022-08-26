@@ -13,18 +13,15 @@ void draw() {
   frameRate(24);
 
   fill(255);
-  text("knap er tændt " + counter + " gange", 10, 300);
+  text("Knap er tændt " + counter + " gange", 10, 300);
 }
 
-void mousePressed() {
+void mouseClicked() {
   minToggleKnap.registrerKlik();
   minAlmKnap.registrerKlik();
-
-
-  //if (minToggleKnap.knapOn||minAlmKnap.knapOn) {
- //   counter++;
-//  }
 }
-
+/*
 void mouseReleased() {
+  knapOn=false;
 }
+*/
