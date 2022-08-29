@@ -10,7 +10,7 @@ class Knap {
   }
 
   void registrerKlik() {
-    if (mousePressed && mouseX>knapX && mouseX<(knapX+knapB) && mouseY>knapY && mouseY<(knapY+knapH)) {
+    if (mouseX>knapX && mouseX<(knapX+knapB) && mouseY>knapY && mouseY<(knapY+knapH)) {
       knapOn = !knapOn;
       counter++;
     }

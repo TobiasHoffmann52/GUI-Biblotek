@@ -1,27 +1,30 @@
 ToggleKnap  minToggleKnap   = new ToggleKnap(10, 50, 120, 40);
-AlmKnap     minAlmKnap      = new AlmKnap(10, 80, 120, 40);
+AlmKnap     minAlmKnap      = new AlmKnap(10, 100, 120, 40);
 int         counter         = 0;
 
 void setup() {
-  size(500, 500);
+  size(500, 200);
 }
 
 void draw() {
   clear();  
+  frameRate(60);
+  textAlign(CENTER);
+  textSize(24);
+  text("Withdrawal from Bank Account", width/2, 30);
+
+  textSize(18);
+  textAlign(LEFT);
   minToggleKnap.tegnKnap(10, 50, 120, 40);  
   minAlmKnap.tegnKnap(10, 100, 120, 40);
-  frameRate(24);
+
 
   fill(255);
-  text("Knap er tændt " + counter + " gange", 10, 300);
+  textSize(36);
+  text("Money " + counter + " $", 200, 100);
 }
 
 void mouseClicked() {
   minToggleKnap.registrerKlik();
   minAlmKnap.registrerKlik();
 }
-/*
-void mouseReleased() {
-  knapOn=false;
-}
-*/

@@ -1,5 +1,5 @@
 class AlmKnap extends Knap {
-  int  knapX, knapY, knapB, knapH;
+  //int  knapX, knapY, knapB, knapH;
   AlmKnap(int x, int y, int b, int h) {
     super(x, y, b, h);
   }
@@ -11,15 +11,13 @@ class AlmKnap extends Knap {
       rect(knapX, knapY, knapB, knapH);
 
       fill(255);
-      text("Hold", knapX+20, knapY+20);
-
-      //counter++;
+      text("+ 1$", knapX+20, knapY+20);
     } else {   
       fill(255, 0, 0);
       rect(knapX, knapY, knapB, knapH);
 
       fill(255);
-      text("Hold", knapX+20, knapY+20);
+      text("+ 1$", knapX+20, knapY+20);
     }
   }
 }
